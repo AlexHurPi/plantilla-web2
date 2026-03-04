@@ -1,5 +1,5 @@
 {
-  "titulo-pagina": "Welcome to Home",
+  "titulo-pagina": "Welcome to Homes",
   "subtitulo": "This is your home page. Here's the main content.",
   "seccion1": "Section 1 Name",
   "parrafo-seccion1": "This is an example paragraph to show how internationalization can be used in an application. Here you can add any text you want to translate into English. Remember that it's important to maintain language consistency throughout the application to provide a better user experience. You can include instructions, descriptions, or any other type of content that's relevant to your application. Internationalization makes your app accessible to a wider audience, which can increase its popularity and success. Don't forget to review the translation to ensure it's accurate and appropriate for your application's context!",
