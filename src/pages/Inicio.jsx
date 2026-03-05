@@ -4,6 +4,7 @@ import ImageTextSection from '../components/section-components/Section-image-tex
 import ImageTextSimple from '../components/image-text/ImageTextSimple';
 import LanguageSelector from '../components/LanguageSelector-components/LanguageSelector';
 import { useTranslation } from 'react-i18next';
+import ImageCarouselManual from '../components/imageCarousel2-components/ImageCarouselManual';
 
 const Inicio = () => {
   const { t } = useTranslation();
@@ -15,14 +16,13 @@ const Inicio = () => {
           <div className="d-flex justify-content-end mb-3">
             <LanguageSelector />
           </div>
-          <h1 className="display-4 fw-bold mb-4">{t("titulo-pagina")}</h1>
-          <p className="lead mb-5">
-            {t("subtitulo")}
-          </p>
-          
-          
-          <ImageTextSimple />
-          <ImageTextSection />          
+            <h1 className="display-4 fw-bold mb-4">{t("titulo-pagina")}</h1>
+            <p className="lead mb-5">
+              {t("subtitulo")}
+            </p>          
+            <ImageTextSimple />            
+            <ImageCarouselManual/>
+            <ImageTextSection />          
         </div>
       </div>
     </div>
