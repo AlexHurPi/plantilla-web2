@@ -17,6 +17,12 @@ const ImageCarouselManual = () => {
     setCurrentIndex(index);
   };
 
+   // ← AGREGAR ESTAS 3 LÍNEAS
+  const BASE_URL = import.meta.env.BASE_URL || '';
+  const getImageUrl = (imagePath) => {
+    return imagePath.replace('src/assets/images/', `${BASE_URL}assets/`);
+  };
+
   return (
     <section className="manual-carousel-section">
       <h2 className="carousel-title">Productos Destacados</h2>
@@ -30,7 +36,7 @@ const ImageCarouselManual = () => {
             <div key={product.id} className="card-slide">
               <div className="card-inner">
                 <div className="card-image">
-                  <img src={product.image} alt={product.title} loading="lazy" />
+                  <img src={getImageUrl(product.image)} alt={product.title} loading="lazy" />
                 </div>
                 <div className="card-content">
                   <h3>{product.title}</h3>
