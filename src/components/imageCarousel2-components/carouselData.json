@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "image": "src/assets/images/Imagen1.png",
+    "image": "./src/assets/images/Imagen1.png",
     "title": "Auriculares Premium",
     "description": "Sonido cristalino con cancelación de ruido activa. Batería de 30 horas.",
     "price": "$299"
   },
   {
     "id": 2,
-    "image": "src/assets/images/Imagen2.png",
+    "image": "./src/assets/images/Imagen2.png",
     "title": "Smartwatch Pro",
     "description": "Monitoreo completo de salud con GPS integrado. Resistente al agua 50m.",
     "price": "$199"
