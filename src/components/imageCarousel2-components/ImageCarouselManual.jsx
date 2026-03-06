@@ -17,10 +17,13 @@ const ImageCarouselManual = () => {
     setCurrentIndex(index);
   };
 
-   // ← AGREGAR ESTAS 3 LÍNEAS
+   // ← COPIA EXACTO
   const BASE_URL = import.meta.env.BASE_URL || '';
   const getImageUrl = (imagePath) => {
-    return imagePath.replace('src/assets/images/', `${BASE_URL}assets/`);
+    console.log('Original:', imagePath);  // ← DEBUG temporal
+    const newPath = imagePath.replace(/^src\/assets\/images\//, `${BASE_URL}assets/`);
+    console.log('Nueva ruta:', newPath);   // ← DEBUG temporal  
+    return newPath;
   };
 
   return (
