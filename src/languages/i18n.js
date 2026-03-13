@@ -8,7 +8,7 @@ i18n
   .init({
     resources: {
       es: { translation: spanish },
-      en: { translation: english }  // ← Agrega el recurso para inglés
+      en: { translation: english }  // ← Recurso para inglés
     },
     lng: 'en',  // Idioma por defecto
     fallbackLng: 'en',

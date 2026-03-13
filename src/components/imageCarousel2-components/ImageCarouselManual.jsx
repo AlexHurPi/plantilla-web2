@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import productsData from './carouselData.json';
+//import productsData from '../../languages/spanish.json'
 import './imageCarouselManual-styles.css';
 
 const ImageCarouselManual = () => {
@@ -15,13 +16,11 @@ const ImageCarouselManual = () => {
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
-  };
-
-  
+  }; 
 
   return (
     <section className="manual-carousel-section">
-      <h2 className="carousel-title">Productos Destacados</h2>
+      {/*<h2 className="carousel-title">Seccion de Productos</h2>*/}
       
       <div className="carousel-wrapper">
         <div 
